@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase.config';
@@ -28,22 +29,24 @@ const Home = () => {
             </View>
 
             <View style={styles.content}>
-                <Text style={styles.subtitle}>Your Legal Assistant</Text>
+                <Text style={styles.subtitle}>Find the safest route</Text>
                 
                 <View style={styles.cardContainer}>
                     <TouchableOpacity style={styles.card}>
-                        <Text style={styles.cardTitle}>Legal Resources</Text>
-                        <Text style={styles.cardDescription}>Access legal documents and information</Text>
+                        <Ionicons name="location" size={24} color="#fa3c75" />
+                        <Text style={styles.cardTitle}>Start Destination</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.card}>
-                        <Text style={styles.cardTitle}>Find Lawyer</Text>
-                        <Text style={styles.cardDescription}>Connect with legal professionals</Text>
+                        <Ionicons name="location" size={24} color="#fa3c75" />
+                        <Text style={styles.cardTitle}>End Destination</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.card}>
-                        <Text style={styles.cardTitle}>Legal Aid</Text>
-                        <Text style={styles.cardDescription}>Get assistance with legal matters</Text>
+                    <TouchableOpacity 
+                        style={styles.findRouteButton}
+                        onPress={() => console.log('Button Pressed')}
+                    >
+                        <Text style={styles.findRouteButtonText}>Find the Safest Route</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -55,6 +58,26 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#1E1E2F',
+    },
+    findRouteButton: {
+        backgroundColor: '#fa3c75',
+        padding: 16,
+        borderRadius: 12,
+        marginTop: 30,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+    },
+    findRouteButtonText: {
+        color: '#FFFFFF',
+        fontSize: 18,
+        fontWeight: 'bold',
     },
     header: {
         padding: 20,
@@ -95,14 +118,16 @@ const styles = StyleSheet.create({
         backgroundColor: '#2A2A3F',
         padding: 20,
         borderRadius: 12,
-        borderLeftWidth: 4,
-        borderLeftColor: '#fa3c75',
+        marginBottom: 15,
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: '#3D3D5C',
     },
     cardTitle: {
-        fontSize: 20,
-        fontWeight: 'bold',
+        fontSize: 18,
         color: '#FFFFFF',
-        marginBottom: 8,
+        marginLeft: 12,
     },
     cardDescription: {
         fontSize: 16,
