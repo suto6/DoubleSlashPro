@@ -1,7 +1,44 @@
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import { Link } from 'expo-router';
+import { Link, useRouter } from 'expo-router';
+import { useState } from 'react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../../firebase.config';
 
 const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [errorMsg, setErrorMsg] = useState<string | null>(null);
+    const router = useRouter();
+
+    const handleInputChange = (setter: (value: string) => void) => (text: string) => {
+        setErrorMsg(null); // Clear error when user types
+        setter(text);
+    };
+
+    const handleLogin = async () => {
+        if (!email || !password) {
+            setErrorMsg('Please fill in all fields');
+            return;
+        }
+
+        setErrorMsg(null);
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            if(user){
+                alert("Login successful!");
+                router.push('../home');
+            }
+            else{
+                setErrorMsg("User not found");
+            }
+        })
+        .catch((error) => {
+            const errorMessage = error.message;
+            setErrorMsg(errorMessage);
+        })
+    };
+
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Login</Text>
@@ -13,13 +50,8 @@ const Login = () => {
                     placeholderTextColor="#666"
                     keyboardType="email-address"
                     autoCapitalize="none"
-                />
-
-                <TextInput
-                    style={styles.input}
-                    placeholder="Phone Number"
-                    placeholderTextColor="#666"
-                    keyboardType="phone-pad"
+                    value={email}
+                    onChangeText={handleInputChange(setEmail)}
                 />
 
                 <TextInput
@@ -27,9 +59,13 @@ const Login = () => {
                     placeholder="Password"
                     placeholderTextColor="#666"
                     secureTextEntry
+                    value={password}
+                    onChangeText={handleInputChange(setPassword)}
                 />
 
-                <TouchableOpacity style={styles.button}>
+                {errorMsg && <Text style={styles.errorText}>{errorMsg}</Text>}
+
+                <TouchableOpacity style={styles.button} onPress={handleLogin}>
                     <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
 
@@ -92,6 +128,11 @@ const styles = StyleSheet.create({
     link: {
         color: '#fa3c75',
         textDecorationLine: 'underline',
+    },
+    errorText: {
+        color: '#ff6b6b',
+        marginBottom: 10,
+        textAlign: 'center',
     },
 });
 
