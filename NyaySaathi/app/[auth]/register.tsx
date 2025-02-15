@@ -11,19 +11,18 @@ const Register = () => {
     const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
     const handleRegister = async () => {
-        try {
-            if (password !== confirmPassword) {
-                setErrorMsg("Passwords don't match");
-                return;
-            }
-            
-            const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-            console.log('User registered:', userCredential.user);
-            router.replace('/'); // Navigate to home after successful registration
-        } catch (error: any) {
-            setErrorMsg(error.message);
-            console.error('Registration error:', error);
-        }
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            alert("Registration successful!");
+            setEmail('');
+            setPassword('');
+            setConfirmPassword('');
+        })
+        .catch((error) => {
+            const errorMessage = error.message;
+            setErrorMsg(errorMessage);
+        })
     };
 
     return (
