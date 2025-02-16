@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "latitude": 22.5518,
+        "longitude": 88.3512,
+        "risk_level": "high",
+        "description": "Poorly lit nightlife zones with inadequate CCTV coverage.",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 2,
+        "latitude": 22.7480,
+        "longitude": 88.4394,
+        "risk_level": "high",
+        "description": "Isolated rural pathways lacking police patrols.",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 3,
+        "latitude": 22.7000,
+        "longitude": 88.4500,
+        "risk_level": "high",
+        "description": "Unsecured public spaces with delayed emergency response.",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 4,
+        "latitude": 22.5265,
+        "longitude": 88.3428,
+        "risk_level": "high",
+        "description": "Lax security near hospitality establishments.",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 5,
+        "latitude": 22.9868,
+        "longitude": 87.8550,
+        "risk_level": "medium",
+        "description": "High domestic violence rates in residential areas.",
+        "time": "Anytime",
+        "reports": 5
+    },
+    {
+        "id": 6,
+        "latitude": 22.9868,
+        "longitude": 87.8550,
+        "risk_level": "high",
+        "description": "Easy access to acid despite regulations.",
+        "time": "Daytime",
+        "reports": 10
+    },
+    {
+        "id": 7,
+        "latitude": 22.6036,
+        "longitude": 88.3841,
+        "risk_level": "high",
+        "description": "Inadequate security in institutional campuses.",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 8,
+        "latitude": 22.7692,
+        "longitude": 88.3704,
+        "risk_level": "high",
+        "description": "Active human trafficking corridors due to border proximity.",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 9,
+        "latitude": 22.5726,
+        "longitude": 88.3639,
+        "risk_level": "medium",
+        "description": "Frequent acid attacks in crowded areas.",
+        "time": "Daytime",
+        "reports": 5
+    },
+    {
+        "id": 10,
+        "latitude": 24.1759,
+        "longitude": 88.2803,
+        "risk_level": "high",
+        "description": "Dowry-related violence hotspots in rural communities.",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 11,
+        "latitude": 22.5937,
+        "longitude": 88.3634,
+        "risk_level": "high",
+        "description": "Cybercrime hotspots near tech parks with public WiFi vulnerabilities",
+        "time": "Anytime",
+        "reports": 8
+    },
+    {
+        "id": 12,
+        "latitude": 22.5656,
+        "longitude": 88.3472,
+        "risk_level": "medium",
+        "description": "Crowded ferry terminals with pickpocketing clusters",
+        "time": "Daytime",
+        "reports": 7
+    },
+    {
+        "id": 13,
+        "latitude": 22.6279,
+        "longitude": 88.3947,
+        "risk_level": "high",
+        "description": "Unauthorized construction sites with migrant labor exploitation",
+        "time": "Night",
+        "reports": 9
+    },
+    {
+        "id": 14,
+        "latitude": 22.5812,
+        "longitude": 88.4221,
+        "risk_level": "high",
+        "description": "Drug trafficking zones near educational institutions",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 15,
+        "latitude": 22.4996,
+        "longitude": 88.3247,
+        "risk_level": "medium",
+        "description": "E-commerce delivery hubs with package theft patterns",
+        "time": "Daytime",
+        "reports": 6
+    },
+    {
+        "id": 16,
+        "latitude": 22.6583,
+        "longitude": 88.4089,
+        "risk_level": "high",
+        "description": "Illegal arms trade corridors near border checkpoints",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 17,
+        "latitude": 22.5344,
+        "longitude": 88.3315,
+        "risk_level": "high",
+        "description": "Counterfeit currency distribution networks in markets",
+        "time": "Daytime",
+        "reports": 8
+    },
+    {
+        "id": 18,
+        "latitude": 22.7165,
+        "longitude": 88.3812,
+        "risk_level": "medium",
+        "description": "Public transport nodes with QR code scam operations",
+        "time": "Anytime",
+        "reports": 7
+    },
+    {
+        "id": 19,
+        "latitude": 22.5521,
+        "longitude": 88.3259,
+        "risk_level": "high",
+        "description": "Industrial areas with hazardous material security gaps",
+        "time": "Night",
+        "reports": 9
+    },
+    {
+        "id": 20,
+        "latitude": 22.6874,
+        "longitude": 88.4517,
+        "risk_level": "high",
+        "description": "Inter-state bus terminals with human smuggling activity",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 21,
+        "latitude": 28.6139,
+        "longitude": 77.2090,
+        "risk_level": "high",
+        "description": "Public transport hotspots with frequent harassment cases",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 22,
+        "latitude": 26.9124,
+        "longitude": 75.7873,
+        "risk_level": "high",
+        "description": "Rural zones with high child marriage prevalence",
+        "time": "Daytime",
+        "reports": 10
+    },
+    {
+        "id": 23,
+        "latitude": 19.0760,
+        "longitude": 72.8777,
+        "risk_level": "medium",
+        "description": "Slum areas with domestic violence clusters",
+        "time": "Night",
+        "reports": 5
+    },
+    {
+        "id": 24,
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "risk_level": "high",
+        "description": "IT corridors with workplace exploitation cases",
+        "time": "Daytime",
+        "reports": 10
+    },
+    {
+        "id": 25,
+        "latitude": 25.5941,
+        "longitude": 85.1376,
+        "risk_level": "high",
+        "description": "Bride trafficking routes in impoverished villages",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 26,
+        "latitude": 22.5726,
+        "longitude": 88.3639,
+        "risk_level": "medium",
+        "description": "Border-adjacent trafficking networks",
+        "time": "Night",
+        "reports": 5
+    },
+    {
+        "id": 27,
+        "latitude": 30.7333,
+        "longitude": 76.7794,
+        "risk_level": "high",
+        "description": "Industrial belts with alcohol-linked domestic violence",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 28,
+        "latitude": 17.3850,
+        "longitude": 78.4867,
+        "risk_level": "medium",
+        "description": "Cyber blackmail targeting young professionals",
+        "time": "Anytime",
+        "reports": 5
+    },
+    {
+        "id": 29,
+        "latitude": 26.8467,
+        "longitude": 80.9462,
+        "risk_level": "high",
+        "description": "Dowry harassment clusters in urban slums",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 30,
+        "latitude": 23.2599,
+        "longitude": 77.4126,
+        "risk_level": "medium",
+        "description": "Tribal areas with normalized marital abuse",
+        "time": "Daytime",
+        "reports": 5
+    }
+]
