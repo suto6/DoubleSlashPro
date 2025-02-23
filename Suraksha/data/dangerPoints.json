@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "latitude": 26.7271,
+        "longitude": 88.3953,
+        "risk_level": "high",
+        "description": "Poorly lit border market areas with frequent harassment reports against women vendors",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 2,
+        "latitude": 27.0360,
+        "longitude": 88.2627,
+        "description": "Isolated tea plantation worker paths with documented assault cases",
+        "risk_level": "high",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 3,
+        "latitude": 23.6739,
+        "longitude": 86.9524,
+        "risk_level": "high",
+        "description": "Industrial worker hostels with inadequate protection for female residents",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 4,
+        "latitude": 22.8952,
+        "longitude": 88.3969,
+        "risk_level": "high",
+        "description": "River ghats with limited security during women's bathing hours",
+        "time": "Dawn",
+        "reports": 10
+    },
+    {
+        "id": 5,
+        "latitude": 25.6117,
+        "longitude": 85.1445,
+        "risk_level": "medium",
+        "description": "Residential areas with high domestic violence incidence rates",
+        "time": "Anytime",
+        "reports": 5
+    },
+    {
+        "id": 6,
+        "latitude": 22.9667,
+        "longitude": 87.5000,
+        "risk_level": "high",
+        "description": "Factory shift change routes with inadequate lighting for women workers",
+        "time": "Night",
+        "reports": 10
+    },
+    {
+        "id": 7,
+        "latitude": 28.7041,
+        "longitude": 77.1025,
+        "risk_level": "high",
+        "description": "University campus zones with reported stalking incidents",
+        "time": "Evening",
+        "reports": 10
+    },
+    {
+        "id": 8,
+        "latitude": 26.3167,
+        "longitude": 89.4333,
+        "risk_level": "high",
+        "description": "Border villages with missing women/girls cases",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 9,
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "risk_level": "medium",
+        "description": "IT park late-night cab queues with harassment complaints",
+        "time": "Night",
+        "reports": 5
+    },
+    {
+        "id": 10,
+        "latitude": 24.1759,
+        "longitude": 88.2803,
+        "risk_level": "high",
+        "description": "Dowry-related violence clusters in traditional communities",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 11,
+        "latitude": 17.3850,
+        "longitude": 78.4867,
+        "risk_level": "high",
+        "description": "Cyber blackmail targeting working women through social media",
+        "time": "Anytime",
+        "reports": 8
+    },
+    {
+        "id": 12,
+        "latitude": 22.5726,
+        "longitude": 88.3639,
+        "risk_level": "medium",
+        "description": "Market complexes with persistent eve-teasing complaints",
+        "time": "Daytime",
+        "reports": 7
+    },
+    {
+        "id": 13,
+        "latitude": 23.3333,
+        "longitude": 86.3667,
+        "risk_level": "high",
+        "description": "Rural health centers lacking safe spaces for female patients",
+        "time": "Daytime",
+        "reports": 9
+    },
+    {
+        "id": 14,
+        "latitude": 26.8467,
+        "longitude": 80.9462,
+        "risk_level": "high",
+        "description": "Public parks with restricted visibility zones dangerous for solo women",
+        "time": "Evening",
+        "reports": 10
+    },
+    {
+        "id": 15,
+        "latitude": 19.0760,
+        "longitude": 72.8777,
+        "risk_level": "medium",
+        "description": "Slum lanes with poor sanitation security for women",
+        "time": "Night",
+        "reports": 6
+    },
+    {
+        "id": 16,
+        "latitude": 31.6340,
+        "longitude": 74.8723,
+        "risk_level": "high",
+        "description": "Border villages with bride trafficking patterns",
+        "time": "Anytime",
+        "reports": 10
+    },
+    {
+        "id": 17,
+        "latitude": 22.4333,
+        "longitude": 87.3333,
+        "risk_level": "high",
+        "description": "Weekly markets with documented harassment of tribal women",
+        "time": "Daytime",
+        "reports": 8
+    },
+    {
+        "id": 18,
+        "latitude": 13.0827,
+        "longitude": 80.2707,
+        "risk_level": "medium",
+        "description": "Bus termini with crowded women's queues vulnerable to groping",
+        "time": "Rush Hours",
+        "reports": 7
+    },
+    {
+        "id": 19,
+        "latitude": 21.9497,
+        "longitude": 88.9406,
+        "risk_level": "high",
+        "description": "Coastal fishing communities with missing women reports",
+        "time": "Night",
+        "reports": 9
+    },
+    {
+        "id": 20,
+        "latitude": 34.0837,
+        "longitude": 74.7973,
+        "risk_level": "high",
+        "description": "Pilgrimage routes with limited women's safety infrastructure",
+        "time": "Daytime",
+        "reports": 10
+    }
+]

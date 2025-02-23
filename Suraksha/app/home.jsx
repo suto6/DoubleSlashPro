@@ -11,68 +11,9 @@ import {
 import MapView, { Marker, Polyline } from "react-native-maps";
 import * as Location from "expo-location";
 import axios from "axios";
+import dangerPoints from '../data/dangerPoints.json';
 
-const ORS_API_KEY = "5b3ce3597851110001cf62484edfa7e43df048af9dd0d08117e2b16b";
-
-// Sample danger points (Replace with API call later)
-const dangerPoints = [
-    [
-        {
-            id: 1,
-            latitude: 28.7041,
-            longitude: 77.1025,
-            risk_level: "high",
-            description: "Reported incidents of harassment at night.",
-            time: "After 9 PM",
-            reports: 12,
-        },
-        {
-            id: 2,
-            latitude: 28.6139,
-            longitude: 77.209,
-            risk_level: "medium",
-            description: "Poor lighting and deserted at night.",
-            time: "Evening & Night",
-            reports: 7,
-        },
-        {
-            id: 3,
-            latitude: 28.5355,
-            longitude: 77.391,
-            risk_level: "high",
-            description: "Multiple cases of theft and harassment reported.",
-            time: "Late Night",
-            reports: 15,
-        },
-        {
-            id: 4,
-            latitude: 19.076,
-            longitude: 72.8777,
-            risk_level: "low",
-            description: "Occasional catcalling incidents reported.",
-            time: "Evening",
-            reports: 3,
-        },
-        {
-            id: 5,
-            latitude: 12.9716,
-            longitude: 77.5946,
-            risk_level: "high",
-            description: "Dark alleys with no CCTV coverage.",
-            time: "Night",
-            reports: 10,
-        },
-        {
-            id: 6,
-            latitude: 22.5726,
-            longitude: 88.3639,
-            risk_level: "medium",
-            description: "Isolated area with no security presence.",
-            time: "Late Evening",
-            reports: 5,
-        },
-    ],
-];
+const ORS_API_KEY = process.env.ORS_API_KEY;
 
 const ClearButton = ({ onPress }) => (
     <TouchableOpacity style={styles.clearButton} onPress={onPress}>
@@ -446,19 +387,20 @@ const Home = () => {
                 }
             >
                 {startLocation && (
-                    <Marker coordinate={startLocation} title="Start Location" />
+                    <Marker coordinate={startLocation} title="Start Location" pinColor="#ed00fa" />
                 )}
                 {routeCoords.length > 0 && (
                     <Marker
                         coordinate={routeCoords[routeCoords.length - 1]}
                         title="End Destination"
+                        pinColor="#ed00fa" // This sets the end marker color to pink
                     />
                 )}
                 {routeCoords.length > 0 && (
                     <Polyline
                         coordinates={routeCoords}
                         strokeWidth={4}
-                        strokeColor="blue"
+                        strokeColor="#ed00fa"
                     />
                 )}
 
